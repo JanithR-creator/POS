@@ -11,19 +11,19 @@ function Product(){
             <br/>
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-sm-6 col-md-4">
+                    <div className="col-12 col-sm-6 col-md-4" style={styleObj}>
                         <div className="form-group">
                             <label htmlFor="productName">Product Name</label>
                             <input type="text" className='form-control' id='productName'/>
                         </div>
                     </div>
-                    <div className="col-12 col-sm-6 col-md-4">
+                    <div className="col-12 col-sm-6 col-md-4" style={styleObj}>
                         <div className="form-group">
                             <label htmlFor="price">Unit Price</label>
                             <input type="number" className='form-control' id='price'/>
                         </div>
                     </div>
-                    <div className="col-12 col-sm-6 col-md-4">
+                    <div className="col-12 col-sm-6 col-md-4" style={styleObj}>
                         <div className="form-group">
                             <label htmlFor="qty">QTY On Hand</label>
                             <input type="number" className='form-control' id='qty'/>
