@@ -1,4 +1,6 @@
 import DefaultCard from "./cards/DefaultCard.tsx";
+import DefaultChart from "./cards/DefaultChart.tsx"
+import MinQtyCard from "./cards/MinQtyCard.tsx";
 function Home(){
 
     return (
@@ -43,10 +45,25 @@ function Home(){
                         />
                     </div>
                 </div>
+                <br/>
+                <div className="row">
+                    <div className="col-12 col-md-9">
+                        <div className="context">
+                            <DefaultChart/>
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-3">
+                        <MinQtyCard/>
+                        <MinQtyCard/>
+                        <MinQtyCard/>
+                        <MinQtyCard/>
+                        <MinQtyCard/>
+                    </div>
+                </div>
             </div>
         </>
 
-    )
+    );
 }
 
 export default Home;

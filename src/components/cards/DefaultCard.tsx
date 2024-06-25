@@ -1,5 +1,4 @@
 import React from "react";
-import './DefaultCard.css';
 
 interface DefaultCardData{
     thumbnail:string;
@@ -11,7 +10,8 @@ interface DefaultCardData{
 function DefaultCard(props:DefaultCardData){
 
     const maxWidthStyle:React.CSSProperties={
-        maxWidth:'540px'
+        maxWidth:'540px',
+        height: '100%'
     }
 
     return (
