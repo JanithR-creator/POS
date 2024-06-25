@@ -1,5 +1,5 @@
 function Order(){
-    return <h1>Customer</h1>
+    return <h1>Order</h1>
 }
 
 export default Order;
