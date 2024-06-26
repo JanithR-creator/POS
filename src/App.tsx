@@ -4,6 +4,7 @@ import Home from "./components/Home.tsx";
 import Customer from "./components/Customer.tsx";
 import Order from "./components/Order.tsx";
 import Product from "./components/Product.tsx";
+import NotFound from "./components/NotFound.tsx";
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
               <Route path='/customer' element={<Customer/>}/>
               <Route path='/order' element={<Order/>}/>
               <Route path='/product' element={<Product/>}/>
+              <Route path="*" element={<NotFound/>}/>
             </Routes>
           </div>
         </Router>
