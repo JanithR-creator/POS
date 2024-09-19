@@ -1,13 +1,17 @@
 {
   "name": "pos",
+  "homepage": "https://JanithR-creator.github.io/POS",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build-gh": "tsc -b && vite build --public-url 'https://JanithR-creator.github.io/POS'",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -24,6 +28,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "ghpages": "^0.0.10",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
   }
